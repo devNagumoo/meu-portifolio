@@ -1,0 +1,230 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .main {
+
+        min-height: 100vh;
+    }
+
+    .background-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        background-image: url('../img/jake-weirick-Q_RBVFFXR_g-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .background-image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    .detalis-person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        position: relative;
+        z-index: 2;
+    }
+
+
+    .social-midias i {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .imagem-person {
+        background-color: #fff;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .imagem-person img {
+        border-radius: 50%;
+    }
+
+    .about-skills-content {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .person-about {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        width: 50%;
+        min-height: 200px;
+        padding: 20px;
+        border: 1px solid #e3e6f0;
+        gap: 15px;
+        border-radius: 8px;
+    }
+
+    .person-skills {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 50%;
+        min-height: 200px;
+        flex-direction: column;
+        border: 1px solid #e3e6f0;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .social-midias i:hover {
+        color: #fff;
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+
+    .person-name span {
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .person-stack span {
+        font-size: 1rem;
+        color: #ccc;
+    }
+
+    .skills-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skils:hover {
+        transform: translateY(-8px);
+        transition: background-color 0.4s ease, transform 0.3s ease;
+    }
+
+    .skils {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: #fad8ba;
+        margin: 10px;
+        border-radius: 8px;
+        transition: background-color 0.4s ease, transform 0.3s ease;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        padding: 20px;
+        border: 1px solid #e3e6f0;
+        margin-top: 25px;
+    }
+
+
+    .form-contact {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 15px;
+
+    }
+
+    .form-contact form {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .form-contact input {
+        margin-top: 15px;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fbe1cb;
+    }
+
+    .form-contact textarea {
+        margin-top: 15px;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #fbe1cb;
+    }
+
+    .btn-enviar {
+        background-color: green;
+        border: none;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px 8px 10px 10px;
+        transition: 0.5s;
+    }
+
+    .btn-enviar:hover {
+        background-color: #28a745;
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+
+
+
+
+    @media (max-width: 768px) {
+        .about-skills-content {
+            flex-direction: column;
+        }
+
+        .person-about,
+        .person-skills {
+            width: 100%;
+            height: auto;
+        }
+
+        .form-contact form {
+            width: 100%;
+        }
+    }
