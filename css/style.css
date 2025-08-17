@@ -162,6 +162,7 @@
      border: 1px solid #e3e6f0;
      margin-top: 25px;
      margin-bottom: 20px;
+     border-radius: 8px;
  }
 
 
@@ -274,6 +275,7 @@
 
      .form-contact form {
          width: 100%;
+         min-height: 500px;
      }
 
      .form-contact input,
