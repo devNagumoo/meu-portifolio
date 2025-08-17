@@ -372,17 +372,3 @@
         width: 100%; 
     }
 }
-
-footer {
-    text-align: center;
-    background-color: #2e2e2e;    
-    padding: 15px;
-
-}
-
-footer p {
-   color: #ccc;
-   font-size: 14px;
-   font-weight: 300;
-
-}
