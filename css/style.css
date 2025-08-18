@@ -365,11 +365,12 @@
  @media (max-width: 768px) {
     .services-img {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     .services-developer {
         width: 100%; 
+        margin: 0;
     }
 }
 
