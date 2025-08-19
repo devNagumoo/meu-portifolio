@@ -456,7 +456,8 @@ footer p {
 }
 
 .card-img img {
-    border-radius: 92%;
+    width: 450px;
+    border-radius: 40%;
 }
 
 .hamburger {
@@ -1026,3 +1027,4 @@ footer p {
         height: 45px;
     }
 }
+
